@@ -17,6 +17,8 @@ agp = "8.10.0"
 ktlint-core = "1.6.0"
 ktlint-gradlePlugin = "0.10.0"
 retrofit = "3.0.0"
+androidx-test-espresso-core = "3.6.1"
+androidx-test-rules = "1.6.1"
 
 [libraries]
 androidPluginForGradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
@@ -70,6 +72,8 @@ room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
 androidX-test-runner = "androidx.test:runner:1.6.2"
 androidX-test-junit = "androidx.test.ext:junit:1.2.1"
 androidX-test-core = "androidx.test:core-ktx:1.6.1"
+androidx-test-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espresso-core" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test-rules" }
 
 conductor = "com.bluelinelabs:conductor:4.0.0-preview-4"
 

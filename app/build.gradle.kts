@@ -50,6 +50,7 @@ android {
     versionName = libs.versions.versionName.get()
 
     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    testInstrumentationRunnerArguments["applicationClassName"] = "voice.app.TestApp"
   }
 
   fun createSigningConfig(name: String): SigningConfig {
@@ -217,6 +218,12 @@ dependencies {
   testImplementation(libs.androidX.test.core)
   testImplementation(libs.robolectric)
   testImplementation(libs.coroutines.test)
+
+  androidTestImplementation(libs.androidx.test.espresso.core)
+  androidTestImplementation(libs.androidX.test.runner)
+  androidTestImplementation(libs.androidx.test.rules)
+  androidTestImplementation(libs.androidX.test.junit)
+  androidTestImplementation(libs.media3.testUtils.core)
 
   debugImplementation(libs.compose.ui.testManifest)
 }
