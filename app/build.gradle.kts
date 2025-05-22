@@ -224,6 +224,7 @@ dependencies {
   androidTestImplementation(libs.androidx.test.rules)
   androidTestImplementation(libs.androidX.test.junit)
   androidTestImplementation(libs.media3.testUtils.core)
+  androidTestImplementation(libs.androidx.test.services)
 
   debugImplementation(libs.compose.ui.testManifest)
 }
